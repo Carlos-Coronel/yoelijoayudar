@@ -31,7 +31,7 @@ export function Header() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-transparent"
+                isScrolled ? "bg-white/95 backdrop-blur-md shadow-md" : "bg-white/50 backdrop-blur-md shadow-md"
             }`}
         >
             <nav className="container mx-auto px-4 py-4" aria-label="Main navigation">

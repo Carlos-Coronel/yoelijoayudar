@@ -96,6 +96,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Prevent unwanted horizontal scroll on mobile */
+html, body {
+  overflow-x: hidden;
+}
+
 /* Custom animations */
 @keyframes fade-in {
   from {
