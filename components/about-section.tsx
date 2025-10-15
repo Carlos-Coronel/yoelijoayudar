@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Eye, Target, Heart, Shield, Users, Award } from "lucide-react"
+import { asset } from "@/lib/assetPath"
 
 export function AboutSection() {
   const values = [
@@ -190,7 +191,7 @@ export function AboutSection() {
                   <CardContent className="p-6 text-center">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-br from-[#E6127C] to-[#00B4D8] p-1">
                       <img
-                        src={member.image || "/placeholder.svg"}
+                        src={asset(member.image || "/placeholder.svg")}
                         alt={member.name}
                         className="w-full h-full object-cover rounded-full bg-white"
                       />

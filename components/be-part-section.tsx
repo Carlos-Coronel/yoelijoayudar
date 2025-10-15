@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Heart, Building2, Calendar } from "lucide-react"
 import Link from "next/link"
+import { asset } from "@/lib/assetPath"
 
 export function BePartSection() {
   const ways = [
@@ -107,7 +108,7 @@ export function BePartSection() {
               <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={campaign.image || "/placeholder.svg"}
+                    src={asset(campaign.image || "/placeholder.svg")}
                     alt={campaign.title}
                     className="w-full h-full object-cover transition-transform hover:scale-110"
                   />

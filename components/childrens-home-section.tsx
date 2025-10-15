@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Home, Users, Heart, BookOpen, Utensils, Stethoscope } from "lucide-react"
 import { useState } from "react"
+import { asset } from "@/lib/assetPath"
 
 export function ChildrensHomeSection() {
   const [activeImage, setActiveImage] = useState(0)
@@ -64,7 +65,7 @@ export function ChildrensHomeSection() {
           <div className="mb-16">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-6 h-[400px] md:h-[500px]">
               <img
-                src={images[activeImage] || "/placeholder.svg"}
+                src={asset(images[activeImage] || "/placeholder.svg")}
                 alt="Hogar de Niños"
                 className="w-full h-full object-cover"
               />

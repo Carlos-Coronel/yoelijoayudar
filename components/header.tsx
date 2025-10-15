@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from 'next/image'
 import {Menu, X} from "lucide-react"
 import {Button} from "@/components/ui/button"
+import { asset } from "@/lib/assetPath"
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -40,7 +41,7 @@ export function Header() {
                         <div
                             className="w-30 h-11 rounded-full overflow-hidden transition-transform group-hover:scale-110">
                             <Image
-                                src="/logo.png"
+                                src={asset("/logo.png")}
                                 alt="Yo Elijo Ayudar Logo"
                                 width={40}
                                 height={40}

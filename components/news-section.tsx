@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight, Facebook, Instagram, Youtube } from "lucide-react"
 import Link from "next/link"
+import { asset } from "@/lib/assetPath"
 
 export function NewsSection() {
   const news = [
@@ -54,7 +55,7 @@ export function NewsSection() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={item.image || "/placeholder.svg"}
+                    src={asset(item.image || "/placeholder.svg")}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform group-hover:scale-110"
                   />
